@@ -18,6 +18,7 @@ package com.arialyy.aria.core.download;
 import android.text.TextUtils;
 import com.arialyy.aria.core.common.RequestEnum;
 import com.arialyy.aria.core.common.controller.FeatureController;
+import com.arialyy.aria.core.config.AppConfig;
 import com.arialyy.aria.core.inf.ICheckEntityUtil;
 import com.arialyy.aria.core.inf.IOptionConstant;
 import com.arialyy.aria.orm.DbEntity;
@@ -65,15 +66,20 @@ public class CheckDGEntityUtil implements ICheckEntityUtil {
   private boolean checkDirPath() {
     String dirPath = mWrapper.getDirPathTemp();
 
+
+
     if (TextUtils.isEmpty(dirPath)) {
       ALog.e(TAG, "文件夹路径不能为null");
       return false;
     }
+
     File file = new File(dirPath);
     if (!FileUtil.canWrite(file.getParent()) && !FileUtil.canWrite(dirPath)) {
       ALog.e(TAG, String.format("路径【%s】不可写", dirPath));
       return false;
     }
+
+
     if (!dirPath.startsWith("/")) {
       ALog.e(TAG, String.format("文件夹路径【%s】错误", dirPath));
       return false;

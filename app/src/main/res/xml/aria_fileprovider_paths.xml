@@ -11,6 +11,9 @@
         name="cache"
         path="." />
 
+<!--    <external-path-->
+<!--        name="external"-->
+<!--        path="Download" />-->
     <external-path
         name="external"
         path="." />
@@ -21,5 +24,5 @@
     <external-cache-path
         name="external_cache_path"
         path="." />
-
+    <external-files-path name="GuaGua" path="GuaGua/Download/"/>
 </paths>

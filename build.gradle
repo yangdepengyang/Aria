@@ -67,10 +67,10 @@ ext {
   mavenCentralDeveloperConnection = 'scm:git:ssh://github.com/AriaLyy/Aria.git'
   mavenCentralTreeURL = 'https://github.com/AriaLyy/KeepassA/tree/master'
 
-  compileSdkVersion = 28
+  compileSdkVersion = 30
   supportLibVersion = "27.1.1"
   buildToolsVersion = "29.0.2"
-  targetSdkVersion = 28
+  targetSdkVersion = 30
   lifecycleVersion = "1.1.1"
   minSdkVersion = 15
 
